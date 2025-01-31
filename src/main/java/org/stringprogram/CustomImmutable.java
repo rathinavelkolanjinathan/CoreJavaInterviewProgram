@@ -34,12 +34,12 @@ public final class CustomImmutable {
     public static void main(String[] args) {
         Date date = new Date();
         List<String> list = new ArrayList();
-        list.add("");
+        list.add("25");
         CustomImmutable cust = new CustomImmutable("hi", 20, Arrays.stream(new String[]{"123", "452"}).collect(Collectors.toList()));
 
         // cust.name="kolanji";
         cust.getMobile().add("950");
-        System.out.println(cust);
+        System.out.println("Immutable"+cust.toString());
     }
 
 }

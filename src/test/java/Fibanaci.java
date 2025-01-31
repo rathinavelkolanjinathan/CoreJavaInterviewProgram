@@ -7,6 +7,7 @@ public class Fibanaci {
     }
 
     public static int getFifi(int i) {
+
         return getFifi(i - 1) * getFifi(i - 2);
     }
 }

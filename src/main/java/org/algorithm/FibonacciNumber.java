@@ -24,6 +24,6 @@ public class FibonacciNumber {
 		//Scanner scanner = new Scanner(System.in);
 		//int n = scanner.nextInt();
 		//scanner.close();
-		System.out.println("fibonacci::"+fibonacci(10));
+		System.out.println("fibonacci::"+fibonacci(5));
 	}
 }

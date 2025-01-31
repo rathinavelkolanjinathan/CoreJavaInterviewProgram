@@ -9,7 +9,7 @@ public class FirstNonRepeatedChar {
 
 		FirstNonRepeatedChar te = new FirstNonRepeatedChar();
 		char c = te.getFirstNonRepeatedChar(input);
-		System.out.println("valaues " + c);
+		System.out.println("values " + c);
 
 	}
 	/* * Using LinkedHashMap to find first non repeated character of String * 

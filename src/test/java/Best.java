@@ -1,4 +1,4 @@
-public class Best extends TestStream {
+public class Best  {
 
     public void display(Integer in){
 

@@ -5,6 +5,9 @@ public class ArraySECON {
 
     public static void main(String[] args) {
 
+
+
+
         int arr[] = {9, 10, 6, 9, 1};
 
         Integer second = Arrays.stream(arr)

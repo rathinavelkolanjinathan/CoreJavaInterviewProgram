@@ -7,21 +7,22 @@ import java.util.Map;
  * Input: s = "leetcode"
  * Output: 0
  * Example 2:
- *
+ * <p>
  * Input: s = "loveleetcode"
  * Output: 2
  * Example 3:
- *
+ * <p>
  * Input: s = "aabb"
  * Output: -1
  */
 public class FirstUniqueCharacter {
     public static void main(String[] args) {
-        String st="";
+        String st = "";
         firstUniqueChar(st);
 
     }
-    public static  int firstUniqueChar(String str) {
+
+    public static int firstUniqueChar(String str) {
         int index = -1;
         Map<Character, Integer> map = new HashMap();
         for (int i = 0; i < str.length(); i++) {

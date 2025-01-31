@@ -31,7 +31,7 @@ public class RepeatedDeletionAlgorithm {
         for (int i = 0; i < nums.length; i++) {
             // An element should be counted as unique if it's the first
             // element in the Array, or is different to the one before it.
-            // System.out.println(nums[i - 1]);
+             System.out.println(nums[i - 1]);
             if (i == 0 || nums[i] != nums[i - 1]) {
                 //System.out.println(nums[i - 1]);
                 uniqueNumbers++;

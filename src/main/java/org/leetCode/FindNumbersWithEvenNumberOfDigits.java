@@ -5,12 +5,12 @@ package org.leetCode;
  */
 
 public class FindNumbersWithEvenNumberOfDigits {
-    public static int findNumbers(int[] nums) {
+    public static int findNumbers(int[] num) {
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if((nums[i]>9 && nums[i]<100) || (nums[i]>999 && nums[i]<10000) ||
-                    (nums[i]>99999 && nums[i]<1000000)||
-                    (nums[i]>9999999 && nums[i]<100000000)||nums[i]>100000000){
+        for (int i = 0; i < num.length; i++) {
+            if((num[i]>9 && num[i]<100) || (num[i]>999 && num[i]<10000) ||
+                    (num[i]>99999 && num[i]<1000000)||
+                    (num[i]>9999999 && num[i]<100000000)||num[i]>100000000){
                 count++;
             }
         }
