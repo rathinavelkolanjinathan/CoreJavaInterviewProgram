@@ -1,4 +1,4 @@
-package org.javadesignpattern.structural.ProxyDesignPattern;
+package org.designpattern.structural.ProxyDesignPattern;
 
 public class ProxyClass extends RealSubject {
 

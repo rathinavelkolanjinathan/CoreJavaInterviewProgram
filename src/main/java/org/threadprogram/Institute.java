@@ -1,31 +1,51 @@
 package org.threadprogram;
 
+/**
+ * this is example of Institute class using thread
+ */
 public class Institute {
 
-    synchronized public void classRoom(String facultyName) {
+    private static final int MULTIPLIER = 10;
 
-        for (int i = 0; i < 10; i++) {
+    private static final int SLEEP = 10;
+    /**
+     *
+     * @param facultyName
+     */
+    synchronized public void classRoom(final String facultyName) {
+
+        for (int i = 0; i < MULTIPLIER; i++) {
 
             System.out.println(i + "Taking for" + facultyName);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(SLEEP);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
     }
 }
 
+/**
+ *
+ */
 class MyThread extends Thread {
-	Institute ins;
-	String facultyName;
+	private Institute ins;
+    private String facultyName;
 
+    /**
+     *
+     */
 	public void run() {
 		ins.classRoom(facultyName);
 	}
 
-	MyThread(Institute inst, String facutyName) {
+    /**
+     *
+     * @param inst
+     * @param facutyName
+     */
+	MyThread(final Institute inst, final String facutyName) {
 
 		this.ins = inst;
 		this.facultyName = facutyName;

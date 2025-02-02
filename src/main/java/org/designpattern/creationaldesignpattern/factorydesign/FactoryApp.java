@@ -1,4 +1,4 @@
-package org.javadesignpattern.creationaldesignpattern.factorydesign;
+package org.designpattern.creationaldesignpattern.factorydesign;
 
 public class FactoryApp {
     public static void main(String[] args) {

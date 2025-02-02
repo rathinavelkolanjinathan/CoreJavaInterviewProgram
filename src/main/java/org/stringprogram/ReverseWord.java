@@ -25,7 +25,8 @@ public class ReverseWord {
 
         //Jdk8
         String String = Stream.of(inputStr)
-                .map(inputValues -> new StringBuilder(inputValues)
+                .map(inputValues ->
+                        new StringBuilder(inputValues)
                         .reverse())
                 .collect(Collectors.joining());
         System.out.println("Using jdk8 :: " + String);

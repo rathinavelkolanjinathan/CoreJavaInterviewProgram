@@ -1,4 +1,4 @@
-package org.javadesignpattern.creationaldesignpattern.prototype;
+package org.designpattern.creationaldesignpattern.prototype;
 
 public class Teacher extends Profession {
 

@@ -1,4 +1,4 @@
-package org.javadesignpattern.creationaldesignpattern.builder;
+package org.designpattern.creationaldesignpattern.builder;
 
 public class Home {
 
@@ -18,10 +18,10 @@ public class Home {
 
     public static void main(String[] args) {
         EarthQuakeResistantBuilde builder = new EarthQuakeResistantBuilde();
-        Director dir =new Director(builder);
+        Director dir = new Director(builder);
         dir.manageRequiredHomeConstruction();
-        Home home =dir.getCompleteObjectofHome();
-        System.out.println("home val"+home);
-        System.out.println("floor"+home.floor);
+        Home home = dir.getCompleteObjectofHome();
+        System.out.println("home val" + home);
+        System.out.println("floor" + home.floor);
     }
 }

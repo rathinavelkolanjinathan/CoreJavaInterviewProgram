@@ -1,4 +1,4 @@
-package org.javadesignpattern.creationaldesignpattern.prototype;
+package org.designpattern.creationaldesignpattern.prototype;
 
 public class Engineer extends Profession {
 

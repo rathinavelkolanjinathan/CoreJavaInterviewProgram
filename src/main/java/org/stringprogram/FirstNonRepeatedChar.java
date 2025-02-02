@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 public class FirstNonRepeatedChar {
 
 	public static void main(String[] args) {
-		String input = "ABbcaDdeff".toLowerCase();
+		String input = "kolaanji".toLowerCase();
 
 		FirstNonRepeatedChar te = new FirstNonRepeatedChar();
 		char c = te.getFirstNonRepeatedChar(input);

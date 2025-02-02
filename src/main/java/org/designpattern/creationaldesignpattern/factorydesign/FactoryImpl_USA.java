@@ -1,4 +1,4 @@
-package org.javadesignpattern.creationaldesignpattern.factorydesign;
+package org.designpattern.creationaldesignpattern.factorydesign;
 
 public class FactoryImpl_USA implements FactoryMethod_Currency {
 
