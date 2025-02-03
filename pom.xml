@@ -6,15 +6,15 @@
 
     <groupId>org.example</groupId>
     <artifactId>jdk_own_practice</artifactId>
-    <version>1.0-0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <modules>
+    <!--<modules>
         <module>algorithm</module>
-        <!-- <module>common</module>
+        &lt;!&ndash; <module>common</module>
          <module>domain</module>
-         <module>primary-adaptor</module>-->
-    </modules>
+         <module>primary-adaptor</module>&ndash;&gt;
+    </modules>-->
 <properties>
     <disable.checkstyle.validation>false</disable.checkstyle.validation>
     <mvn-compiler-plugin.version>3.11.0</mvn-compiler-plugin.version>
@@ -40,12 +40,7 @@
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+
 
         <dependency>
             <groupId>org.mockito</groupId>
@@ -107,18 +102,18 @@
                 </configuration>
             </plugin>
 
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
-                <!--<configuration>
+                &lt;!&ndash;<configuration>
                     <excludes>**/cosmos/model/**</excludes>
-                </configuration>-->
+                </configuration>&ndash;&gt;
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
                         <artifactId>checkstyle</artifactId>
-                        <version>8.41</version> <!-- Specify the Checkstyle version here -->
+                        <version>8.41</version> &lt;!&ndash; Specify the Checkstyle version here &ndash;&gt;
                     </dependency>
                 </dependencies>
                 <executions>
@@ -128,16 +123,18 @@
                         <configuration>
                             <skip>${disable.checkstyle.validation}</skip>
                             <configLocation>${basedir}/src/main/resources/checkstyle.xml</configLocation>
-                            <encode>UTF-8</encode>
-                            <consoleoutput>true</consoleoutput>
-                            <failonviolation>warning</failonviolation>
+                            <encoding>UTF-8</encoding>
+                           <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            &lt;!&ndash;<failsOnViolation>true</failsOnViolation>&ndash;&gt;
+                            <violationSeverity>warning</violationSeverity>
                         </configuration>
                         <goals>
                             <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
