@@ -1,15 +1,15 @@
 package org.threadprogram;
-
 /**
- * this is example of Institute class using thread
+ * This is example of Institute class using thread
  */
+
 public class Institute {
 
     private static final int MULTIPLIER = 10;
 
     private static final int SLEEP = 10;
     /**
-     *
+     * This method is classroom
      * @param facultyName
      */
     synchronized public void classRoom(final String facultyName) {
@@ -27,14 +27,14 @@ public class Institute {
 }
 
 /**
- *
+ * Mythread class extends Thread
  */
 class MyThread extends Thread {
 	private Institute ins;
     private String facultyName;
 
     /**
-     *
+     * run method
      */
 	public void run() {
 		ins.classRoom(facultyName);
