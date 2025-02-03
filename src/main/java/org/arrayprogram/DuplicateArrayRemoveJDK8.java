@@ -14,7 +14,10 @@ public class DuplicateArrayRemoveJDK8 {
         System.out.println("original Array:"+numbersList);
 
         List<Integer> listWithoutDuplicates =
-                numbersList.stream().distinct().collect(Collectors.toList());
+                numbersList
+                        .stream()
+                        .distinct()
+                        .collect(Collectors.toList());
 
         System.out.println("With out duplicate:"+listWithoutDuplicates);
     }

@@ -6,6 +6,7 @@ public class SecondMaxValues {
         int result = getSecondMaxValues(inputArray);
         System.out.print("Second max values " + result);
     }
+
     public static int getSecondMaxValues(int inputArray[]) {
         int max = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
@@ -14,8 +15,7 @@ public class SecondMaxValues {
                 secondMax = max;
                 max = inputArray[i];
                 //System.out.print(max);
-            } else
-                if (inputArray[i] > secondMax && inputArray[i] != max)
+            } else if (inputArray[i] > secondMax && inputArray[i] != max)
                 secondMax = inputArray[i];
         }
         return secondMax;

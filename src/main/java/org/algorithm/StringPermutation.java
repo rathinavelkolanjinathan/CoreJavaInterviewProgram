@@ -18,13 +18,9 @@ public class StringPermutation {
     }
 
     public static String sort(String s) {
-
         char[] content = s.toCharArray();
-
         //System.out.println("To char" + content);
-
         Arrays.sort(content);
-
         return new String(content);
     }
 

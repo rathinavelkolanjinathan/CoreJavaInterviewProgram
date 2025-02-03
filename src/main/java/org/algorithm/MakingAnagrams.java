@@ -22,8 +22,6 @@ public class MakingAnagrams {
             System.out.println(firstString + " and " + secondString + " are not anagrams.");
         }
     }
-
-
     public static HashMap createMapKeys(String str) {
         HashMap map = new HashMap();
         for (int i = 0; i < str.length(); i++) {
@@ -36,7 +34,6 @@ public class MakingAnagrams {
         }
         return map;
     }
-
 
     public static void main(String[] args) {
         // Scanner in = new Scanner(System.in);

@@ -3,7 +3,6 @@ package org.algorithm;
 public class LongestPalindromicSubstring {
     int resultStart;
     int resultLength;
-
     public String longestPalindrome(String input) {
         int strLength = input.length();
         if (strLength < 2) {
@@ -15,7 +14,6 @@ public class LongestPalindromicSubstring {
         }
         return input.substring(resultStart, resultStart + resultLength);
     }
-
     private void expandRange(String str, int begin, int end) {
         while (begin >= 0 && end < str.length() &&
                 str.charAt(begin) == str.charAt(end)) {
@@ -27,7 +25,6 @@ public class LongestPalindromicSubstring {
             resultLength = end - begin - 1;
         }
     }
-
     public static void main(String[] args) {
         String input ="babad";
        // Input: s = "cbbd";

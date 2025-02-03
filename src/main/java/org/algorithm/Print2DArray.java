@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Print2DArray {
-
     public static void main(String[] args) {
 
         //System.out.println("test"+1.0/0.0);
@@ -27,11 +26,12 @@ public class Print2DArray {
 
         };
         Arrays.stream(maxArray).map(a -> a).forEach(System.out::println);
-//integer
+       //integer
         Arrays.stream(maxArray).forEach((i) -> {
             Arrays.stream(i).forEach((j) -> System.out.print(j + " "));
             System.out.println();
         });
+
         //row wise max values
         Arrays.stream(maxArray).map(ints -> Arrays
                 .stream(ints)

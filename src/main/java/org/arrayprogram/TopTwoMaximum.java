@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class TopTwoMaximum {
 	public static void main(String args[]) {
-		topTwo(new int[] { 20, 34, 21, 87, 92, Integer.MAX_VALUE });
+		topTwoMax(new int[] { 20, 34, 21, 87, 92, Integer.MAX_VALUE });
 		//topTwo(new int[] { 0, Integer.MIN_VALUE, -2 });
 		//topTwo(new int[] { Integer.MAX_VALUE, 0, Integer.MAX_VALUE });
 		//topTwo(new int[] { 1, 1, 0 });
 	}
 
-	public static void topTwo(int[] numbers) {
+	public static void topTwoMax(int[] numbers) {
 		int max1 = Integer.MIN_VALUE;
 		int max2 = Integer.MIN_VALUE;
 		for (int number : numbers) {
