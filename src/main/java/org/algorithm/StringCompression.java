@@ -1,6 +1,9 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class StringCompression {
+    private static final Logger logger = Logger.getLogger(StringCompression.class.toString());
     public static String compress(String st) {
         int count = 0;
         StringBuilder builder = new StringBuilder();
@@ -16,7 +19,7 @@ public class StringCompression {
     }
     public static void main(String[] args) {
         String st1 = compress("kollaann");
-        System.out.println("count>>>>" + st1);
+        logger.info("count>>>>" + st1);
     }
 
 }

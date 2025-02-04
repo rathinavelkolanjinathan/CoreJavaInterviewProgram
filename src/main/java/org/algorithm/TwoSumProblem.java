@@ -2,15 +2,17 @@ package org.algorithm;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class TwoSumProblem {
+    private static final Logger logger = Logger.getLogger(TwoSumProblem.class.toString());
     public static void main(String[] args) {
         //target =9;
 
         int number[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] result = twoSum(number, 9);
 
-        System.out.print("result " + result[0] + "re::" + result[1]);
+        logger.info("result " + result[0] + "re::" + result[1]);
     }
 
     public static int[] twoSum(int[] arr, int target) {
@@ -21,11 +23,11 @@ public class TwoSumProblem {
             if (!map.containsKey(target - arr[i])) {
                 //System.out.println("array " + arr[i]);
                 map.put(arr[i], i);
-                System.out.println("map " + map);
+                logger.info("map " + map);
             } else {
                 result[1] = i;
                 result[0] = (Integer) map.get(target - arr[i]);
-                System.out.println(" else map " + map);
+                logger.info(" else map " + map);
                 return result;
             }
         }

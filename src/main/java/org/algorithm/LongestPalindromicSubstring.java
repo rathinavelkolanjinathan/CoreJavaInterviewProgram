@@ -1,6 +1,9 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class LongestPalindromicSubstring {
+    private static final Logger logger = Logger.getLogger(LongestPalindromicSubstring.class.toString());
     int resultStart;
     int resultLength;
     public String longestPalindrome(String input) {
@@ -30,6 +33,6 @@ public class LongestPalindromicSubstring {
        // Input: s = "cbbd";
         LongestPalindromicSubstring longestpalindromicsubstring = new LongestPalindromicSubstring();
         String result = longestpalindromicsubstring.longestPalindrome(input);
-        System.out.print(result);
+        logger.info("Longest palindrome"+result);
     }
 }

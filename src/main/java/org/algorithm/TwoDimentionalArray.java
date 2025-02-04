@@ -3,10 +3,12 @@ package org.algorithm;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class TwoDimentionalArray {
+    private static final Logger logger = Logger.getLogger(TwoDimentionalArray.class.toString());
     public static void main(String[] args) {
 
         /*int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
@@ -50,7 +52,7 @@ public class TwoDimentionalArray {
                         .mapToInt(i -> innerArr[i - 1]))
                 .max().getAsInt();
 
-        System.out.println(maxVal);
+        logger.info("two dimentional "+maxVal);
     }
 
     public static int getMaxNumber(int[][] array) {

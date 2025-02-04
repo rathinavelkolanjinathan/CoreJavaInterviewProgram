@@ -1,11 +1,14 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class NearestValue {
+    private static final Logger logger = Logger.getLogger(NearestValue.class.toString());
     public static void main(String[] args) {
         int[] arr = new int[]{2, 5, 6, 7, 8, 8, 9};
-        System.out.println(findClosest(arr, 5));
-        System.out.println(findClosest(arr, 11));
-        System.out.println(findClosest(arr, 4));
+        logger.info(""+findClosest(arr, 5));
+        logger.info(""+findClosest(arr, 11));
+        logger.info(""+findClosest(arr, 4));
     }
 
     public static int findClosest(int[] arr, int target) {

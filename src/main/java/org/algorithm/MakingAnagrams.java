@@ -1,8 +1,11 @@
 package org.algorithm;
 
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 public class MakingAnagrams {
+    private static final Logger logger = Logger.getLogger(MakingAnagrams.class.toString());
+
     public static void isAnagram(String firstString, String secondString) {
 
 //Remove all white space & case differences
@@ -10,18 +13,19 @@ public class MakingAnagrams {
         String strCopyTwo = secondString.replaceAll("\\s", "").toUpperCase();
         //If the strings aren’t the same length, not anagrams
         if (strCopyOne.length() != strCopyTwo.length()) {
-            System.out.println(firstString + " and " + secondString + " are not anagrams.");
+            logger.info(firstString + " and " + secondString + " are not anagrams.");
             return;
         }
         //HashMap to store the number of characters
         HashMap mapOne = createMapKeys(strCopyOne);
         HashMap mapTwo = createMapKeys(strCopyTwo);
         if (mapOne.equals(mapTwo)) {
-            System.out.println(firstString + " and " + secondString + " are anagrams");
+            logger.info(firstString + " and " + secondString + " are anagrams");
         } else {
-            System.out.println(firstString + " and " + secondString + " are not anagrams.");
+            logger.info(firstString + " and " + secondString + " are not anagrams.");
         }
     }
+
     public static HashMap createMapKeys(String str) {
         HashMap map = new HashMap();
         for (int i = 0; i < str.length(); i++) {

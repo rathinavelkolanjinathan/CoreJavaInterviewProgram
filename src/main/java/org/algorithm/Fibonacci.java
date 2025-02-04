@@ -1,12 +1,16 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class Fibonacci {
     /**
      * This method is used to generate the nth fibonacci number
      *
-     * @param n
+     * @param int n
      * @return a nth fibonacci number
      */
+
+    private static final Logger logger = Logger.getLogger(Fibonacci.class.toString());
     public static int fib(int n) {
         //System.out.println("input values: "+n);
         if (n <= 0) {
@@ -27,6 +31,6 @@ public class Fibonacci {
         //Scanner scanner = new Scanner(System.in);
         //int n = scanner.nextInt();
         //scanner.close();
-        System.out.println("fibonacci::" + fib(5));
+        logger.info("fibonacci::" + fib(5));
     }
 }

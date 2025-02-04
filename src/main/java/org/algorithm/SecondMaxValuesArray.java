@@ -1,10 +1,13 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class SecondMaxValuesArray {
+    private static final Logger logger = Logger.getLogger(SecondMaxValuesArray.class.toString());
     public static void main(String[] args) {
         int[] inputArray = {5, 900000, 3, 15, 1, 2};
         int result = getSecondMaxValues(inputArray);
-        System.out.print("Second max values " + result);
+        logger.info("Second max values " + result);
     }
 
     public static int getSecondMaxValues(int inputArray[]) {

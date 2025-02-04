@@ -1,9 +1,9 @@
 package org.dataStructure.stack;
 
 public class Stack {
-    private int arr[];
+    private final int arr[];
     private int top;
-    private int capacity;
+    private final int capacity;
 
     // Constructor to initialize the stack
     Stack(int size) {

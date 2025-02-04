@@ -1,14 +1,17 @@
 package org.algorithm;
 
+import java.util.logging.Logger;
+
 public class StringUniqueCharacter_Model2 {
+    private static final Logger logger = Logger.getLogger(MinimumValuesArray.class.toString());
     public static void main(String args[]) {
         StringUniqueCharacter_Model2 obj = new StringUniqueCharacter_Model2();
         String input = "GeeksforGeeks";
 
         if (obj.uniqueCharacters(input))
-            System.out.println("The String " + input + " has all unique characters");
+            logger.info("The String " + input + " has all unique characters");
         else
-            System.out.println("The String " + input + " has duplicate characters");
+            logger.info("The String " + input + " has duplicate characters");
     }
 
     boolean uniqueCharacters(String str) {

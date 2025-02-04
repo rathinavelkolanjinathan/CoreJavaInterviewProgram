@@ -1,7 +1,9 @@
 package org.algorithm;
 
-public class PrintPairs {
+import java.util.logging.Logger;
 
+public class PrintPairs {
+    private static final Logger logger = Logger.getLogger(PrintPairs.class.toString());
     //o(n2)
     public static void main(String[] args) {
         //(n-1)+(n-2)+(n-3)+...2+1    n(n-1)/2
@@ -12,7 +14,7 @@ public class PrintPairs {
     static void printPairs(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = i+1; j < array.length; j++) {
-                System.out.println(array[i] + " " + array[j]);
+                logger.info(array[i] + " " + array[j]);
             }
         }
 

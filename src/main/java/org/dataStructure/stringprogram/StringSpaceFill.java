@@ -14,11 +14,11 @@ public class StringSpaceFill {
 	 */
 
 public static void main(String args[] ) throws Exception {
-    int array[]={10,20,30,40};
-    int size=array.length;
-    Arrays.sort(array);
-    System.out.println(Arrays.toString(array));
-    int result=array[size-4];
+    int arr[]={10,20,30,40};
+    int size=arr.length;
+    Arrays.sort(arr);
+    System.out.println(Arrays.toString(arr));
+    int result=arr[size-4];
     System.out.println(result);
     
     

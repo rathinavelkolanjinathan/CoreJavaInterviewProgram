@@ -1,11 +1,16 @@
 package org.algorithm;
 
+import org.dataStructure.stringprogram.GoodStringBadString;
+
+import java.util.logging.Logger;
+
 public class Factorial {
+    private static final Logger logger = Logger.getLogger(Factorial.class.toString());
     public static void main(String[] args) {
         int nn = 5;
         int result = factorial(nn);
 
-        System.out.println("Factorials of " + nn+"= " + result);
+        logger.info("Factorials of " + nn+"= " + result);
     }
 
     static int factorial(int n) {

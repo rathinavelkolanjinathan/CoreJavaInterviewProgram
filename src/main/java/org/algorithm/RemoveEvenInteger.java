@@ -1,8 +1,10 @@
 package org.algorithm;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class RemoveEvenInteger {
+    private static final Logger logger = Logger.getLogger(RemoveEvenInteger.class.toString());
     public static void main(String[] args) {
         int[] evenArray = {2, 3, 4, 5, 6};
         int result[] = removeEvenNumber(evenArray);
@@ -28,7 +30,7 @@ public class RemoveEvenInteger {
     }
 
     public static void printArray(int[] result) {
-        Arrays.stream(result).forEach(t -> System.out.println(t));
+        Arrays.stream(result).forEach(eventInt -> logger.info("Remove EvenInteger"+eventInt));
 
     }
 }
