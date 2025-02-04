@@ -1,4 +1,4 @@
 package org.collection;
 
-public class WeakHashMap  {
+public class WeakHashMap {
 }

@@ -1,8 +1,12 @@
-package Collection;
+package org.collection;
+
+import org.algorithm.Factorial;
 
 import java.util.EnumSet;
+import java.util.logging.Logger;
 
 public class GFG {
+    private static final Logger logger = Logger.getLogger(GFG.class.toString());
     // Enum
     enum Game { CRICKET, HOCKEY, TENNIS }
 
@@ -14,6 +18,6 @@ public class GFG {
         EnumSet<Game> games = EnumSet.allOf(Game.class);
 
         // Printing EnumSet elements to the console
-        System.out.println("EnumSet: " + games);
+        logger.info("EnumSet: " + games);
     }
 }

@@ -1,7 +1,10 @@
 package org.collection.generics;
 
+import org.algorithm.Factorial;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * The question mark (?) is known as the wildcard in generic programming.
@@ -12,6 +15,7 @@ import java.util.List;
  * This incompatibility may be softened by the wildcard if ? is used as an actual type parameter.
  */
 public class UpperBoundedDemo {
+    private static final Logger logger = Logger.getLogger(UpperBoundedDemo.class.toString());
     public static void main(String[] args)
     {
 
@@ -19,13 +23,13 @@ public class UpperBoundedDemo {
         List<Integer> list1 = Arrays.asList(4, 5, 6, 7);
 
         // printing the sum of elements in list
-        System.out.println("Total sum is:" + sum(list1));
+        logger.info("Total sum is:" + sum(list1));
 
         // Double list
         List<Double> list2 = Arrays.asList(4.1, 5.1, 6.1);
 
         // printing the sum of elements in list
-        System.out.print("Total sum is:" + sum(list2));
+        logger.info("Total sum is:" + sum(list2));
     }
 
     private static double sum(List<? extends Number> list)

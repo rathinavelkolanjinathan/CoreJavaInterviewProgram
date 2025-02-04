@@ -1,11 +1,14 @@
 package org.collection;
 
+import org.algorithm.Factorial;
+
 import java.time.LocalDate;
 import java.util.PriorityQueue;
+import java.util.logging.Logger;
 
-public class PriorityQueue_Launcher {
-
-	public PriorityQueue_Launcher() {
+public class PriorityQueueExample {
+	private static final Logger logger = Logger.getLogger(PriorityQueueExample.class.toString());
+	public PriorityQueueExample() {
 	}
 
 	public static void main(String[] args) {
@@ -23,7 +26,7 @@ public class PriorityQueue_Launcher {
 		PriorityQueueTest e = queue.poll();
 
 		// System.out.println(e);
-		System.out.println(queue);
+		logger.info(""+queue);
 		/*
 		 * while(true) { PriorityQueueTest e=queue.poll(); System.out.println(e);
 		 * if(e==null)break;

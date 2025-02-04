@@ -1,9 +1,13 @@
 package org.collection.generics;
 
+import org.algorithm.Factorial;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class UnboundedWildcard {
+    private static final Logger logger = Logger.getLogger(UnboundedWildcard.class.toString());
     public static void main(String[] args)
     {
 
@@ -13,14 +17,14 @@ public class UnboundedWildcard {
         // Double list
         List<Double> list2 = Arrays.asList(1.1, 2.2, 3.3);
 
-        printlist(list1);
+        printListValues(list1);
 
-        printlist(list2);
+        printListValues(list2);
     }
 
-    private static void printlist(List<?> list)
+    private static void printListValues(List<?> list)
     {
 
-        System.out.println(list);
+        logger.info("list of values"+list);
     }
 }

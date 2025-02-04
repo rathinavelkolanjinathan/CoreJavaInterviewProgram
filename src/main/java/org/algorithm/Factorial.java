@@ -1,7 +1,5 @@
 package org.algorithm;
 
-import org.dataStructure.stringprogram.GoodStringBadString;
-
 import java.util.logging.Logger;
 
 public class Factorial {

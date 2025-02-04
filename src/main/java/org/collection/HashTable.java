@@ -1,8 +1,12 @@
 package org.collection;
 
+import org.algorithm.Factorial;
+
 import java.util.Hashtable;
+import java.util.logging.Logger;
 
 public class HashTable {
+	private static final Logger logger = Logger.getLogger(HashTable.class.toString());
 	public static void main(String[] args) {
 
 		// Creating Hashtable object
@@ -16,6 +20,6 @@ public class HashTable {
 		ht.put(68, "D");
 
 		// Print and display the HashTable elements
-		System.out.println(ht);
+		logger.info("hashtable "+ht);
 	}
 }

@@ -1,9 +1,13 @@
 package org.collection.generics;
 
+import org.algorithm.Factorial;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class LowerBounded {
+    private static final Logger logger = Logger.getLogger(LowerBounded.class.toString());
     public static void main(String[] args)
     {
         // Lower Bounded Integer List
@@ -22,6 +26,6 @@ public class LowerBounded {
     public static void printOnlyIntegerClassorSuperClass(
             List<? super Integer> list)
     {
-        System.out.println(list);
+        logger.info("List of values"+list);
     }
 }

@@ -1,11 +1,16 @@
 package org.collection;
 
+import org.algorithm.Factorial;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-public class ConvertListTomapJDK8 {
+public class ConvertListToMapJDK8 {
+    private static final Logger logger = Logger.getLogger(ConvertListToMapJDK8.class.toString());
+
     public static void main(String[] args) {
 
         List<Hosting> list = new ArrayList<>();
@@ -25,14 +30,14 @@ public class ConvertListTomapJDK8 {
         Map<String, Long> result2 = list.stream().collect(
                 Collectors.toMap(Hosting::getName, Hosting::getWebsites));
 
-        System.out.println("Result 2 : " + result2);
+        logger.info("Result 2 : " + result2);
 
         // Same with result1, just different syntax
         // key = id, value = name
         Map<Integer, String> result3 = list.stream().collect(
                 Collectors.toMap(x -> x.getId(), x -> x.getName()));
 
-        System.out.println("Result 3 : " + result3);
+        logger.info("Result 3 : " + result3);
     }
 }
 
