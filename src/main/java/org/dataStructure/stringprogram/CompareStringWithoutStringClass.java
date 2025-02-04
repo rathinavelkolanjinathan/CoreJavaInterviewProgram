@@ -11,8 +11,8 @@ public class CompareStringWithoutStringClass {
         int strMinimum = Math.min(inputStr1, inputStr2);
 
         for (int i = 0; i < strMinimum; i++) {
-            int str1_ch =  str1.charAt(i);
-            int str2_ch =  str2.charAt(i);
+            int str1_ch = str1.charAt(i);
+            int str2_ch = str2.charAt(i);
 
             if (str1_ch != str2_ch) {
                 return str1_ch - str2_ch;

@@ -30,7 +30,8 @@ public class MoveZeroes {
             intArray[k] = 0;
 
         }
-        Arrays.stream(intArray).forEach(array-> System.out.println("Array values"+array));
+        Arrays.stream(intArray)
+                .forEach(array-> System.out.println("Array values"+array));
 
     }
 

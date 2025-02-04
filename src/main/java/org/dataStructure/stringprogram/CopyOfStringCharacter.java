@@ -6,7 +6,7 @@ public class CopyOfStringCharacter {
 	public static void main(String[] args) {
 		char[] arr = { 'p', 'q', 'r', 's' };
 		String str = String.copyValueOf(arr, 1, 2);
-		System.out.println(str);
+		System.out.println("copy of value"+str);
 
 		String st = "hello";
 
@@ -18,7 +18,7 @@ public class CopyOfStringCharacter {
 			build.append(cc[i]);
 
 		}
-		System.out.println("jk>>>>>>::: " + build);
+		System.out.println("Copy of Character>>>>>>::: " + build);
 
 	}
 
