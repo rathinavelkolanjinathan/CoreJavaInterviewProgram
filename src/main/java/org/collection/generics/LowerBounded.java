@@ -1,7 +1,5 @@
 package org.collection.generics;
 
-import org.algorithm.Factorial;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
@@ -26,6 +24,6 @@ public class LowerBounded {
     public static void printOnlyIntegerClassorSuperClass(
             List<? super Integer> list)
     {
-        logger.info("List of values"+list);
+        logger.info("List of values:{}"+list);
     }
 }
